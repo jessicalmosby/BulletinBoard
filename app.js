@@ -1,8 +1,9 @@
 /* Imports */
 
 /* Get DOM Elements */
-
-/* State */
+const cards = document.getElementById('cards');
+const loginBtn = document.getElementById('login-btn');
+const createBtn = document.getElementById('create-btn');
 
 /* Events */
 

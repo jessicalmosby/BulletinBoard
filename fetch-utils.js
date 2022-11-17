@@ -8,3 +8,13 @@ export async function fetchPost() {
     const response = await client.form('posts').select('*');
     return response.data;
 }
+
+export async function loadData() {
+    await client.auth.loadData();
+}
+
+export async function signUpUser({ email, password }) {
+    const response = await client.auth.signUp({ email, password });
+
+    return response.user;
+}

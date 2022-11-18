@@ -1,39 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <!-- metadata -->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-<head>
-    <!-- metadata -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <!-- title and favicon -->
+        <title>Bulletin Board</title>
+        <link rel="icon" type="image/x-icon" href="assets/alchemy-favicon.png" />
 
-    <!-- title and favicon -->
-    <title>Web App</title>
-    <link rel="icon" type="image/x-icon" href="assets/alchemy-favicon.png" />
+        <!-- link to supabase -->
+        <script
+            defer
+            src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@1.35.7/dist/umd/supabase.min.js"
+        ></script>
 
-    <!-- js -->
-    <script type="module" src="app.js"></script>
+        <!-- js -->
+        <script type="module" src="app.js"></script>
 
-    <!-- fonts -->
-    <!-- see https://fonts.google.com/ -->
+        <!-- fonts -->
+        <!-- see https://fonts.google.com/ -->
 
-    <!-- css -->
-    <link rel="stylesheet" href="styles/reset.css" />
-    <link rel="stylesheet" href="styles/global.css" />
-    <!-- add link for page specific css -->
+        <!-- css -->
+        <link rel="stylesheet" href="styles/reset.css" />
+        <link rel="stylesheet" href="styles/global.css" />
+        <!-- add link for page specific css -->
+    </head>
 
-</head>
+    <body>
+        <header>
+            <h1>Alchemy Community Bulletin Board</h1>
+        </header>
 
-<body>
-    <header>
-        <img class="logo" src="assets/html_css_js.png" alt="logo">
-        <h1>Web App</h1>
-    </header>
-
-    <main>
-
-    </main>
-
-</body>
-
+        <main>
+            <form class="sign-in-form">
+                <div id="sign-in">
+                    Sign In
+                    <label>Email</label>
+                    <input type="email" name="email" id="sign-in-email" />
+                    <label>Password</label>
+                    <input type="password" name="password" id="sign-in-pass" />
+                    <button type="submit">Sign In</button>
+                </div>
+            </form>
+            <form class="sign-up-form">
+                <div id="sign-up">
+                    Sign Up
+                    <label>Email</label>
+                    <input type="email" name="email" id="sign-up-email" />
+                    <label>Password</label>
+                    <input type="password" name="password" id="sign-up-pass" />
+                    <button type="submit">Sign Up</button>
+                </div>
+            </form>
+        </main>
+    </body>
 </html>

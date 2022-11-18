@@ -25,3 +25,29 @@ Additional considerations:
     -   What needs to live in a persistence layer?
 -   Is there some state we need to initialize?
 -   Ask: should any of this work be abstracted into functions? (i.e., is the work complicated? can it be reused?)
+
+![wireframe](wireframe.png)
+
+### HTML
+
+-   landing page: AUTH
+    -   sign up form
+    -   sign in form
+-   home page
+    -l ink to create page
+    -   button to sign out
+-   create page
+    -   form to input post information
+
+### Events
+
+-   landing page: form submits
+-   home page: window load event
+-   create page: form submit
+
+### Slices
+
+1. sign up
+2. sign in
+3. redirects (including sign out)
+4. create page

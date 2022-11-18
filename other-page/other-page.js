@@ -19,5 +19,5 @@ signOutButton.addEventListener('click', async () => {
 });
 
 createBtn.addEventListener('click', () => {
-    location.replace('./create');
+    location.replace('../create');
 });

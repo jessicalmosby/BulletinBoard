@@ -3,7 +3,7 @@
 import { signInUser, signUpUser } from './fetch-utils.js';
 
 /* Get DOM Elements */
-const cards = document.getElementById('cards');
+
 const signInForm = document.querySelector('.sign-in-form');
 const signUpForm = document.querySelector('.sign-up-form');
 

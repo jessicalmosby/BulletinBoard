@@ -6,6 +6,7 @@ const client = supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
 
 export async function fetchPosts() {
     const response = await client.form('posts').select('*');
+    console.log(response);
     return response.data;
 }
 

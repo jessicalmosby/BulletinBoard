@@ -30,3 +30,12 @@ export async function signOut() {
 
     return (window.location.href = '/');
 }
+
+export async function createPost() {
+    const response = await client.from('posts').insert(post);
+    if (response.data) {
+        return response.data;
+    } else {
+        console.error(response.error);
+    }
+}

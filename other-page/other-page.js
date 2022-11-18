@@ -1,2 +1,2 @@
-const signUpForm = document.getElementById('sign-up-form');
-const signInForm = document.getElementById('sign-in-form');
+const signOutForm = document.getElementById('sign-out-form');
+const createBtn = document.getElementById('create-btn');

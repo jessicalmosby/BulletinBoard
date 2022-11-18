@@ -2,8 +2,7 @@
 
 /* Get DOM Elements */
 const cards = document.getElementById('cards');
-const loginBtn = document.getElementById('login-btn');
-const createBtn = document.getElementById('create-btn');
+const signIn = document.getElementById('sign-in-btn');
 
 /* Events */
 

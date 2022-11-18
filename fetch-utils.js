@@ -31,7 +31,7 @@ export async function signOut() {
     return (window.location.href = '/');
 }
 
-export async function createPost() {
+export async function createPost(post) {
     const response = await client.from('posts').insert(post);
     if (response.data) {
         return response.data;
